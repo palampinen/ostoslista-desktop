@@ -1,0 +1,96 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import "_variables.scss";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$brand-primary: #638ACC !default;
+$brand-secondary: #E91E63 !default;
+$brand-primary-light: #9ab3dd !default;
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+
+}
+
+.btn.btn-outline {background:transparent; color:#FFF;border:2px solid #FFF; transform:scale(1); transition: all 0.55s cubic-bezier(0.25, 0.8, 0.25, 1) 0s}
+.btn.btn-outline:hover,
+.btn.btn-outline:active,
+.btn.btn-outline:focus{ color:$brand-primary-light;border-color:$brand-primary-light; transform:scale(1.05)}
+
+.jumbotron {
+  padding:8px 0;
+  border-radius:0;-webkit-border-radius:0; background:#454A54; color:#FFF; position:relative;
+  .bg {opacity:0.4;top:0; left:0; display:block;z-index:0;width:100%; height:100%; position:absolute;background:url(../images/bg.jpg) no-repeat 50% 50%; background-size:cover;}
+
+  .text {margin-top:5%;}
+  h1 {
+    margin-bottom: 40px;margin-top:20px;
+    .domain {text-transform:uppercase;font-size:105%;font-weight:500;position:relative;z-index:2;}
+    .suffix {
+      background:transparent;
+      border: 2px solid $brand-primary-light;
+      border-radius: 100%;
+      color: #fff;
+      display: inline-block;
+      font-size: 30px;
+      font-weight: 900;
+      height: 150px;
+      left: -29px;
+      line-height: 150px;
+      position: relative;
+      text-align: center;
+      top: -19px;
+      width: 150px;
+    }
+  }
+  img {position:relative; bottom:-100px;margin-right:10px; }
+}
+
+.marketing {padding-top:120px; padding-bottom:20px; position: relative;
+  img {margin:0px 0 -100px;}
+  .line {margin-bottom:25px; padding-left:65px;position:relative;}
+  .icon {text-align:center; position:absolute; left:0; top:0; font-size:30px; line-height:50px; display:inline-block; width:50px; height:50px;background:$brand-secondary; color:#FFF; border-radius:50%; margin:25px 15px 40px 0;}
+}
+
+.lightblue {
+  padding:120px 0 30px;
+  background:#6289CB;
+  background:#47A1EF;
+
+  color:#FFF;
+  color:#ddd;
+  h2 {color:#FFF;padding:30px 0; font-size:300%;}
+  .link {font-size:200%;color:#FFF;display:block;font-weight:700}
+  img {clear:both;}
+}
+
+.center {text-align:center;}
+
+.footer {
+  text-align:right;
+  color:#CCC;
+  color:rgba(0,0,0,.3);
+  padding:30px;
+  .container {border-top:1px solid #f1f1f1; padding:50px 0;color:#bbb;text-align:right;}
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .jumbotron {
+
+    h1 {
+      .domain {text-transform:uppercase;font-size:80%;font-weight:500;position:relative;z-index:2;}
+      .suffix {      height: 100px;width:100px; line-height:100px; left:-15px;}
+    }
+  }
+  .marketing img {max-width:100%;}
+}
